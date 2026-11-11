@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="RADAR: descubra tendências, produtos e ideias que estão crescendo nos Estados Unidos e acompanhe sua chegada ao Brasil.">
+  <title>RADAR — O mundo testa. O Brasil descobre.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#/inicio" aria-label="RADAR início">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span class="brand-name">RADAR<span>.</span><small>FUTURE WATCH</small></span>
+      </a>
+      <div class="side-label">MENU PRINCIPAL</div>
+      <nav class="side-nav" aria-label="Navegação principal">
+        <a href="#/inicio" data-route="inicio"><span class="nav-icon">⌂</span> Visão geral</a>
+        <a href="#/explorar" data-route="explorar"><span class="nav-icon">⌕</span> Explorar tendências</a>
+        <a href="#/brasil" data-route="brasil"><span class="nav-icon">◎</span> Radar Brasil</a>
+        <a href="#/metodo" data-route="metodo"><span class="nav-icon">◈</span> Como analisamos</a>
+      </nav>
+      <div class="side-divider"></div>
+      <div class="side-label">ACOMPANHANDO AGORA</div>
+      <div class="watch-list">
+        <button data-open="oculos"><i class="dot green"></i><span>Óculos inteligentes</span><b>↗</b></button>
+        <button data-open="gadgets"><i class="dot orange"></i><span>Gadgets de cozinha</span><b>↗</b></button>
+        <button data-open="mahjong"><i class="dot blue"></i><span>Hobbies presenciais</span><b>→</b></button>
+        <button data-open="ia-compras"><i class="dot purple"></i><span>IA nas compras</span><b>→</b></button>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-pulse"><span class="pulse-orb"></span><div><b>RADAR ATIVO</b><small>Dados verificados em 11 nov 2026</small></div></div>
+        <div class="side-foot">Curadoria independente<br>Estados Unidos → Brasil</div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="breadcrumb"><span>RADAR</span><i>/</i><b id="breadcrumb-current">Visão geral</b></div>
+        <div class="top-actions">
+          <span class="edition"><i></i> EDIÇÃO SEMANAL <b>11.11.26</b></span>
+          <button class="icon-button" id="favorites-top" aria-label="Abrir favoritos" title="Favoritos">☆</button>
+          <button class="avatar" id="about-top" aria-label="Sobre o RADAR">R</button>
+        </div>
+      </header>
+
+      <section class="view active" id="view-inicio" aria-label="Visão geral">
+        <div class="home-grid">
+          <div class="home-main">
+            <div class="eyebrow"><span class="eyebrow-line"></span> RADAR DE TENDÊNCIAS <span class="eyebrow-date">WEEKLY DROP · #01</span></div>
+            <section class="hero-card">
+              <div class="hero-copy">
+                <div class="hero-tags"><span class="tag tag-green">DESTAQUE DA SEMANA</span><span class="tag tag-dark">TECNOLOGIA</span></div>
+                <h1>O futuro já<br>está nos seus <em>óculos?</em></h1>
+                <p>Óculos com inteligência artificial estão ganhando espaço. Veja os números, o que já chegou ao Brasil e o que ainda está por vir.</p>
+                <div class="hero-meta"><span>↗ INDÚSTRIA EM EXPANSÃO</span><span>•</span><span>LEITURA DE 3 MIN</span></div>
+                <button class="primary-button" data-open="oculos">Explorar descoberta <span>↗</span></button>
+              </div>
+              <div class="hero-art" aria-label="Ilustração de óculos inteligentes">
+                <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+                <div class="hero-glasses"><div class="lens lens-left"></div><div class="bridge"></div><div class="lens lens-right"></div><div class="arm"></div></div>
+                <div class="float-chip chip-one"><span class="chip-dot"></span> AI INSIDE</div>
+                <div class="float-chip chip-two">+35,3% <small>crescimento anual</small></div>
+                <div class="hero-spark spark-a">✳</div><div class="hero-spark spark-b">✦</div>
+              </div>
+            </section>
+
+            <div class="section-heading"><div><span class="eyebrow-small">O QUE ESTÁ SE MEXENDO</span><h2>Radar da semana</h2></div><button class="text-link" data-route="explorar">Ver todas as tendências <span>→</span></button></div>
+            <div class="trend-grid home-trends">
+              <button class="trend-card" data-open="gadgets">
+                <div class="trend-thumb thumb-orange"><span class="thumb-emoji">✳</span><span class="thumb-kicker">PRODUTOS</span></div>
+                <div class="trend-card-body"><div class="trend-card-top"><span class="tag tag-up">↑ 194%</span><span class="tiny-muted">EUA · 7 DIAS</span></div><h3>Gadgets de cozinha</h3><p>Buscas por novidades para a cozinha aceleraram no TikTok.</p><span class="card-arrow">Ver análise ↗</span></div>
+              </button>
+              <button class="trend-card" data-open="mahjong">
+                <div class="trend-thumb thumb-blue"><span class="tile-stack"><i>萬</i><i>發</i><i>中</i></span><span class="thumb-kicker">COMPORTAMENTO</span></div>
+                <div class="trend-card-body"><div class="trend-card-top"><span class="tag tag-steady">RITMO ESTÁVEL</span><span class="tiny-muted">EUA</span></div><h3>Hobbies fora da tela</h3><p>Jogos presenciais e clubes cresceram — mas o Mahjong já esfriou?</p><span class="card-arrow">Ver análise ↗</span></div>
+              </button>
+              <button class="trend-card" data-open="ia-compras">
+                <div class="trend-thumb thumb-purple"><span class="ai-bubble">AI<span>✦</span></span><span class="thumb-kicker">INTELIGÊNCIA ARTIFICIAL</span></div>
+                <div class="trend-card-body"><div class="trend-card-top"><span class="tag tag-br">BRASIL EM ADOÇÃO</span><span class="tiny-muted">EUA + BR</span></div><h3>IA nas compras</h3><p>Assistentes de IA começam a participar da jornada de compra.</p><span class="card-arrow">Ver análise ↗</span></div>
+              </button>
+            </div>
+          </div>
+
+          <aside class="home-aside">
+            <div class="aside-head"><span class="eyebrow-small">PULSO DO RADAR</span><span class="live-label"><i></i> SINAIS RECENTES</span></div>
+            <div class="pulse-card">
+              <div class="pulse-title">O que está acelerando</div>
+              <div class="pulse-row"><div><b>Gadgets de cozinha</b><small>Buscas no TikTok · 7 dias</small></div><strong class="positive">+194%</strong></div>
+              <div class="pulse-track"><span style="width:88%"></span></div>
+              <div class="pulse-row"><div><b>Testando gadgets</b><small>Buscas no TikTok · 7 dias</small></div><strong class="positive">+159%</strong></div>
+              <div class="pulse-track"><span style="width:72%"></span></div>
+              <div class="pulse-row"><div><b>Óculos XR</b><small>Remessas globais · Q2 2026</small></div><strong class="positive">+35,3%</strong></div>
+              <div class="pulse-track"><span style="width:48%"></span></div>
+              <p class="micro-note">*Não são dados ao vivo. Cada indicador tem seu período e sua fonte.</p>
+            </div>
+            <div class="editor-pick">
+              <div class="pick-top"><span>OLHAR DO EDITOR</span><span class="pick-star">✦</span></div>
+              <h3>O melhor tema para abrir o RADAR?</h3>
+              <p><b>Gadgets de cozinha.</b> Têm forte aceleração nas buscas e são fáceis de demonstrar em vídeos curtos. A presença de produtos semelhantes no Brasil precisa ser verificada item a item.</p>
+              <button data-open="gadgets" class="outline-button">Por que esse tema? <span>→</span></button>
+            </div>
+            <div class="source-mini"><span>↗</span><p>Os números são sinais de interesse, não garantia de vendas ou de sucesso futuro.</p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="view" id="view-explorar" aria-label="Explorar tendências">
+        <div class="page-heading"><div><span class="eyebrow-small">DESCUBRA O QUE ESTÁ MUDANDO</span><h1>Explore tendências<span class="heading-dot">.</span></h1><p>Novidades, sinais de crescimento e ideias para acompanhar dos EUA ao Brasil.</p></div><div class="heading-count"><b>04</b><span>TENDÊNCIAS<br>ANALISADAS</span></div></div>
+        <div class="explore-tools"><label class="search-box"><span>⌕</span><input id="trend-search" type="search" placeholder="Buscar tendência, tema ou palavra..."></label><div class="filter-row" id="filter-row"><button class="filter-chip selected" data-filter="Todas">Todas</button><button class="filter-chip" data-filter="Tecnologia">Tecnologia</button><button class="filter-chip" data-filter="Produtos">Produtos</button><button class="filter-chip" data-filter="Comportamento">Comportamento</button></div></div>
+        <div class="explore-grid" id="explore-grid">
+          <button class="explore-card" data-open="oculos"><div class="explore-art art-glasses"><span class="mini-glasses">◉—◉</span><small>TECH / WEARABLES</small></div><div class="explore-info"><div class="trend-card-top"><span class="tag tag-up">EM EXPANSÃO</span><small>ESTADOS UNIDOS</small></div><h3>Óculos inteligentes com IA</h3><p>35,3% de crescimento anual nas remessas globais da categoria XR no Q2.</p><div class="explore-bottom"><span>Brasil: já existe geração anterior</span><b>↗</b></div></div></button>
+          <button class="explore-card" data-open="gadgets"><div class="explore-art art-gadgets"><span class="kitchen-symbol">✳</span><small>SMART HOME / DAILY</small></div><div class="explore-info"><div class="trend-card-top"><span class="tag tag-up">ACELERANDO</span><small>ESTADOS UNIDOS</small></div><h3>Gadgets de cozinha</h3><p>406,4 mil buscas em sete dias para “kitchen gadgets 2026”; alta de 194%.</p><div class="explore-bottom"><span>Brasil: similares já existem</span><b>↗</b></div></div></button>
+          <button class="explore-card" data-open="mahjong"><div class="explore-art art-mahjong"><span class="mahjong-tiles"><i>🀄</i><i>🀅</i><i>🀄</i></span><small>OFFLINE / SOCIAL</small></div><div class="explore-info"><div class="trend-card-top"><span class="tag tag-steady">DESACELEROU</span><small>ESTADOS UNIDOS</small></div><h3>Mahjong e hobbies presenciais</h3><p>Forte alta nas pesquisas ao longo do ano, mas sinal recente de estabilização.</p><div class="explore-bottom"><span>Brasil: presença específica não medida</span><b>↗</b></div></div></button>
+          <button class="explore-card" data-open="ia-compras"><div class="explore-art art-ai"><span class="ai-orbit">AI<span>✦</span></span><small>AI / COMMERCE</small></div><div class="explore-info"><div class="trend-card-top"><span class="tag tag-br">EM ADOÇÃO</span><small>EUA + BRASIL</small></div><h3>Inteligência artificial nas compras</h3><p>53% dos consumidores brasileiros pesquisados usaram IA na compra online mais recente.</p><div class="explore-bottom"><span>Brasil: adoção já avançada</span><b>↗</b></div></div></button>
+        </div>
+        <div class="no-results" id="no-results" hidden>Nenhuma tendência encontrada. Tente outro termo ou categoria.</div>
+        <div class="page-footnote">Seleção editorial baseada em fontes públicas. Períodos e metodologias variam entre os indicadores.</div>
+      </section>
+
+      <section class="view" id="view-brasil" aria-label="Comparação Estados Unidos e Brasil">
+        <div class="page-heading compact-heading"><div><span class="eyebrow-small">EUA × BRASIL</span><h1>Radar Brasil<span class="heading-dot">.</span></h1><p>O que já chegou, o que está sendo adotado e o que ainda precisa de validação.</p></div><div class="flag-pair"><span>🇺🇸</span><i>→</i><span>🇧🇷</span></div></div>
+        <div class="country-summary"><div><span class="summary-kicker">NOSSA PERGUNTA CENTRAL</span><h2>Essa novidade já chegou por aqui?</h2><p>Não basta uma tendência crescer nos EUA. O RADAR acompanha a presença e os sinais de adoção no Brasil.</p></div><div class="summary-stats"><div><b>01</b><small>já disponível</small></div><div><b>02</b><small>presença parcial</small></div><div><b>01</b><small>adoção em curso</small></div></div></div>
+        <div class="comparison-table-wrap"><table class="comparison-table"><thead><tr><th>TENDÊNCIA</th><th>SINAL NOS EUA</th><th>SITUAÇÃO NO BRASIL</th><th>LEITURA RADAR</th></tr></thead><tbody>
+          <tr><td><button data-open="oculos" class="table-name"><span class="table-icon icon-green">◉</span>Óculos inteligentes</button></td><td><span class="table-status up">Em expansão</span><small>XR +35,3% YoY no Q2</small></td><td><span class="table-status partial">Já disponível</span><small>Ray-Ban Meta Gen 2 lançado no Brasil</small></td><td><span class="table-verdict">Acompanhar novos modelos</span></td></tr>
+          <tr><td><button data-open="gadgets" class="table-name"><span class="table-icon icon-orange">✳</span>Gadgets de cozinha</button></td><td><span class="table-status up">Acelerando</span><small>Buscas TikTok +194% em 7 dias</small></td><td><span class="table-status partial">Similares existem</span><small>Popularidade do item específico não medida</small></td><td><span class="table-verdict">Investigar produtos</span></td></tr>
+          <tr><td><button data-open="mahjong" class="table-name"><span class="table-icon icon-blue">🀄</span>Mahjong / hobbies</button></td><td><span class="table-status steady">Estabilizando</span><small>Alta anual, sem aceleração recente</small></td><td><span class="table-status unknown">Não confirmado</span><small>Falta medir clubes e buscas locais</small></td><td><span class="table-verdict">Observar nicho</span></td></tr>
+          <tr><td><button data-open="ia-compras" class="table-name"><span class="table-icon icon-purple">AI</span>IA nas compras</button></td><td><span class="table-status up">Em adoção</span><small>Uso já presente na jornada</small></td><td><span class="table-status up">Adoção alta</span><small>53% usaram IA na última compra online</small></td><td><span class="table-verdict">Tendência já chegou</span></td></tr>
+        </tbody></table></div>
+        <div class="comparison-note"><span>ⓘ</span><p>“Já chegou” não significa que se tornou popular. A tabela separa disponibilidade, adoção medida e popularidade ainda não confirmada.</p></div>
+      </section>
+
+      <section class="view" id="view-metodo" aria-label="Metodologia">
+        <div class="page-heading"><div><span class="eyebrow-small">TRANSPARÊNCIA PRIMEIRO</span><h1>Como analisamos<span class="heading-dot">.</span></h1><p>O RADAR não prevê o futuro. Ele organiza sinais para ajudar você a enxergar o que merece atenção.</p></div><div class="method-stamp">RADAR<br><b>METHOD</b><span>01 / 04</span></div></div>
+        <div class="method-grid">
+          <article class="method-card"><span class="method-number">01</span><div class="method-icon green-icon">⌕</div><h3>Encontrar</h3><p>Buscamos sinais em tendências de pesquisa, lançamentos, relatórios de mercado e fontes locais.</p><small>Google Trends · TikTok · Product Hunt · relatórios</small></article>
+          <article class="method-card"><span class="method-number">02</span><div class="method-icon orange-icon">↗</div><h3>Verificar</h3><p>Conferimos o período, a origem do dado e se ele mede buscas, vendas, remessas ou intenção.</p><small>Período · amostra · metodologia · data</small></article>
+          <article class="method-card"><span class="method-number">03</span><div class="method-icon blue-icon">◎</div><h3>Comparar</h3><p>Investigamos se o produto ou comportamento já está disponível ou sendo adotado no Brasil.</p><small>Fontes brasileiras · disponibilidade · adoção</small></article>
+          <article class="method-card"><span class="method-number">04</span><div class="method-icon purple-icon">✦</div><h3>Classificar</h3><p>Usamos rótulos editoriais: acelerando, em observação, estável ou desacelerando.</p><small>Não é previsão nem garantia de sucesso.</small></article>
+        </div>
+        <div class="method-bottom"><div><b>O que os rótulos significam?</b><span><i class="dot green"></i> Acelerando: indicador recente em alta.</span><span><i class="dot blue"></i> Estável: interesse ainda existe, mas perdeu ritmo.</span><span><i class="dot orange"></i> Em observação: sinal inicial ou evidência limitada.</span><span><i class="dot gray"></i> Desacelerando: indicador caiu ou deixou de crescer.</span></div><div class="method-warning"><b>Importante</b><p>Uma alta de buscas não prova que um produto vende bem. Um item disponível no Brasil não é necessariamente popular. O RADAR informa o que a fonte mede e evita misturar métricas diferentes.</p></div></div>
+      </section>
+
+      <section class="view detail-view" id="view-detalhe" aria-label="Detalhe da tendência">
+        <div class="detail-top"><button class="back-link" id="back-detail">← Voltar às tendências</button><span class="detail-date">EDIÇÃO 11 NOV 2026</span></div>
+        <div id="detail-content" class="detail-content"></div>
+      </section>
+
+      <section class="view" id="view-favoritos" aria-label="Tendências salvas">
+        <div class="page-heading"><div><span class="eyebrow-small">SUA LISTA</span><h1>Favoritos<span class="heading-dot">.</span></h1><p>Guarde as descobertas que você quer acompanhar.</p></div></div>
+        <div class="favorites-grid" id="favorites-grid"></div>
+        <div class="empty-favorites" id="empty-favorites"><span>☆</span><h2>Nenhuma tendência salva ainda</h2><p>Abra uma descoberta e toque em “Salvar no meu radar” para encontrá-la aqui.</p><button class="primary-button" data-route="explorar">Explorar tendências <span>→</span></button></div>
+      </section>
+
+      <section class="view" id="view-sobre" aria-label="Sobre o RADAR">
+        <div class="about-card"><div class="about-mark"><span class="brand-mark"><span></span><span></span><span></span></span></div><div class="eyebrow-small">SOBRE O PROJETO</div><h1>O mundo testa.<br><em>O Brasil descobre.</em></h1><p>O RADAR é um projeto independente de curadoria de tendências. A ideia é encontrar sinais interessantes em outros mercados, investigar sua presença no Brasil e explicar por que vale acompanhar.</p><div class="about-pills"><span>Curiosidade</span><span>Fontes verificáveis</span><span>Olhar Brasil</span></div><button class="primary-button" data-route="explorar">Ver descobertas <span>↗</span></button></div>
+      </section>
+      <footer class="main-footer"><span>© 2026 RADAR · CURADORIA INDEPENDENTE</span><span>DADOS COM FONTE. OPINIÕES IDENTIFICADAS.</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
